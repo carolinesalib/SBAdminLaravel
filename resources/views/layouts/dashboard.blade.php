@@ -1,5 +1,4 @@
 @extends('layouts.plane')
-$menus
 @section('body')
  <div id="wrapper">
 
@@ -325,6 +324,9 @@ $menus
                         </li>
                         <li {{ (Request::is('*documentation') ? 'class="active"' : '') }}>
                             <a href="{{ url ('documentation') }}"><i class="fa fa-file-word-o fa-fw"></i> Documentation</a>
+                        </li>
+                        <li {{ (Request::is('*servidor') ? 'class="active"' : '') }}>
+                            <a href="{{ url ('servidor') }}"><i class="fa fa-users fa-fw"></i> Servidor</a>
                         </li>
                     </ul>
                 </div>

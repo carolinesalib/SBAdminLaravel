@@ -78,3 +78,5 @@ Route::get('/documentation', function()
 });
 
 Route::get('/teste', 'TesteController@lista');
+
+Route::get('/servidor', 'ServidorController@lista');
